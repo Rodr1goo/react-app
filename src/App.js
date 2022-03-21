@@ -4,13 +4,21 @@ import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import NavBarBoots from './components/NavBarBoots';
+import ItemListContainer from './components/ItemListContainer';
+import ItemCounter from './components/ItemCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <NavBarBoots/>
+
+      <ItemListContainer greetings='Bienvenidos al Viejo Gray!'/>
+
+      <ItemCounter valorInicial={1} stock={5}/>
+
+
     </div>
   );
 }
