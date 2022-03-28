@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 
 const ItemCounter = ({valorInicial, stock}) => {
 
-
     const [contador, setContador] = useState(valorInicial)
 
   const sumar = () =>{
@@ -26,7 +25,7 @@ const ItemCounter = ({valorInicial, stock}) => {
 
   }
 
-  return (
+   return (
     <div>
       <button onClick={restar}>-</button>
       <span>{contador}</span>

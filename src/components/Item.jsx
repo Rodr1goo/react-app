@@ -3,7 +3,7 @@ import ItemCounter from './ItemCounter'
 
 const Item = ({producto}) => {
  
-    const{name, img, description} = producto
+    const{name, img, description, stock} = producto
 
     const [show, setShow] = useState(false)
 
@@ -25,7 +25,7 @@ const Item = ({producto}) => {
             <p className='card-text'>{name}</p>
             <p>{description}</p>
             <button onClick={verMas}>{show ? 'Ver menos' : 'Ver mas'} </button>
-            <ItemCounter stock={5} initial={1} onAdd={onAdd}/>
+            <ItemCounter stock={stock} valorInicial={1} onAdd={onAdd}/>
         </div>
         
         
