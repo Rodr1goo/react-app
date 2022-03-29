@@ -24,9 +24,9 @@ function App() {
 
 
                         <ItemListContainer greetings='Bienvenidos al Viejo Gray!'/>
-                        <ItemCounter valorInicial={1} stock={5}/>
                         <ItemList/>
                         <ItemDetailContainer/>  
+                        <ItemCounter valorInicial={1} stock={5}/>
                         
                         
                         {/* al colocarlos adentro del Routes, se rompe todo.  */}

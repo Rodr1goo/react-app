@@ -6,7 +6,7 @@ const ItemListContainer = (props) => {
     const {greetings} = props
   return (
     <div>
-        <h1>
+        <h1 className='h1-titulo'>
             {greetings}
         </h1>
     </div>

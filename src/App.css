@@ -1,8 +1,12 @@
+*{
+  background-color: #eedfdf;
+}
+
 .navbar{
-  background-color: cadetblue;
+  background-color: #CACFD6;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .links{
@@ -15,3 +19,67 @@
 .logo {
   width: 2rem;
 }
+
+/* item list container  */
+
+
+.h1-titulo{
+  
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+.card-titulo {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BtnItem{
+  width: 14rem;
+  background-color: #CACFD6;
+  border: 1px solid #0F0A0A;
+  padding: .8rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  background-image: linear-gradient(top,#b43838,#a13232);
+  border-radius: 3px;
+  font-family: 'PT Sans', sans-serif;
+  
+}
+
+.BtnItem:hover {
+  background-color: #607196;
+  background-image: linear-gradient(top,#b43838,#8d2c2c);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+  border-color: #0F0A0A;
+}
+
+
+/* CONTADOR */
+.BtnCounter{
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: none ;
+  padding: 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  margin: 20px;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  transition: 0.8s;
+}
+
+.BtnCounter:hover {
+  color: #3498db;
+}
+
