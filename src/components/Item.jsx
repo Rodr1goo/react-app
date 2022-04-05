@@ -15,9 +15,7 @@ const Item = ({producto}) => {
         setShow(!show)
     }
 
-    const onAdd = () => {
-        console.log('agregue al carrito.')
-    }
+    
 
   return (
 
@@ -29,12 +27,8 @@ const Item = ({producto}) => {
                     <div className=' card-body'>
                             <p className='  card-titulo card h-100 card-body'>{name}</p>
                             <p>{description}</p>
-                            <button className=' BtnItem' onClick={verMas}>{show ? 'Ver menos' : 'Ver mas'} </button>
-                            <ItemCounter stock={stock} valorInicial={1} onAdd={onAdd}/>
-
                             <button className= 'btn btn-success' onClick={()=>navegar(`/detalles/${producto.id}`)}>VER DETALLES</button>
-                    </div>
-        
+                    </div>  
         </div>
     </div>
         

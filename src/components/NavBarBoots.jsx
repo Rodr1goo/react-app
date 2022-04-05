@@ -13,15 +13,23 @@ const NavBarBoots = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <li className="nav-item dropdown">
+          <p className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </p>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><Link className="dropdown-item" to='/categoria/Anatomia'>Anatomía</Link></li>
+            <li><Link className="dropdown-item" to='/categoria/Neuroanatomia'>Neurología</Link></li>
+            <li><Link className="dropdown-item" to='/categoria/Histologia'>Histología</Link></li>
+            <li><Link className="dropdown-item" to='/productos'>Todos los productos</Link></li>
+          </ul>
+        </li>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link active" to='/productos'>Productos</Link>
+         <li className="nav-item">
+          <Link className="nav-link" to='/nosotros'>Nosotros</Link>
         </li>
          <li className="nav-item">
-          <Link className="nav-link" to='/src/pages/nosotros'>Nosotros</Link>
-        </li>
-         <li className="nav-item">
-          <Link className="nav-link" to='/src/pages/contacto'>Contacto</Link>
+          <Link className="nav-link" to='/contacto'>Contacto</Link>
         </li> 
         
       </ul>

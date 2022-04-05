@@ -6,13 +6,18 @@ const ItemDetail = ({productDetail}) => {
 
   const volver = useNavigate();
 
-    const {name, description, img} = productDetail
+    const {name, description, img, stock} = productDetail
+
+    const onAdd = () => {
+      console.log('agregue al carrito.')
+  }
+
   return (
     <div>
         <h2>Detalle del producto : {name}</h2>
-        <img className="card-img-top" className="imagenes" src={img} alt={name} />
+        <img className="imagenes" src={img} alt={name} />
         <p>{description}</p>
-        <h2>agregar producto al carrito : {ItemCounter}</h2>
+        <ItemCounter stock={stock} valorInicial={1} onAdd={onAdd}/>
         <button className='btn btn-info' onClick={() => volver('/productos')}>Volver atrás</button>
     </div>
   )
