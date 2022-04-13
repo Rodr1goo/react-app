@@ -9,12 +9,15 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
+import {CartProvider} from './context/CartContext'
 
 
 
 
 function App() {
   return (   
+          <CartProvider>
+
       <BrowserRouter>
       
           <NavBarBoots/>
@@ -29,6 +32,8 @@ function App() {
                   </Routes>
       
           </BrowserRouter>
+          
+          </CartProvider>
   );
 }
 

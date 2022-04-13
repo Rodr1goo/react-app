@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+
+
+
 
 const Contacto = () => {
+  const handleClick = () => {
+    console.log('Click')
+  }
+  
+  
+  
+  
+  
+    useEffect(() => {
+  
+     window.addEventListener('Click', handleClick)
+  
+     return () => {
+    window.removeEventListener('Click', handleClick)
+     }
+  
+   }, [])
   return (
-    <h1> CONTACTO </h1>
+    <div onClick={handleClick}> 
+      <h2> Contacto </h2>
+    </div>
   )
 }
 
